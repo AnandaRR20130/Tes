@@ -1,0 +1,27 @@
+clc
+clear all
+
+x=[15 30 45 60 75 90 105 120 135 150 165 180];
+y=[3026 6009 9052 11985 14840 17795 20773 23763 26604 29321 32314 35315];
+
+plot(x,y)
+xlim([1 180])
+ylim([1 36000])
+xlabel('Waktu (t)')
+ylabel('Jumlah Partikel pada Detektor')
+title('Grafik Simulasi Eksperimen Stern-Gerlach')
+
+hold on
+
+x=[15 30 45 60 75 90 105 120 135 150 165 180];
+y=[2984 5983 8951 11874 14793 17664 20593 23491 26410 29153 32146 35134];
+
+plot(x,y)
+xlim([1 180])
+ylim([1 36000])
+xlabel('Waktu (t)')
+ylabel('Jumlah Partikel pada Detektor')
+title('Grafik Simulasi Eksperimen Stern-Gerlach')
+
+legend('jumlah partikel pada detektor atas', 'jumlah partikel pada detektor bawah')
+hold off
